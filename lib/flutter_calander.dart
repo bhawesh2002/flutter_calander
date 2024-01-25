@@ -20,6 +20,13 @@ class flutter_calander extends StatefulWidget {
 
 class _flutter_calander_State extends State<flutter_calander> {
   late DateTime _selectedDate;
+
+  @override
+  void initState() {
+    super.initState();
+    _selectedDate = DateTime.now();
+  }
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
