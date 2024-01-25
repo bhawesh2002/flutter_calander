@@ -7,8 +7,12 @@ import 'package:flutter/material.dart';
 class flutter_calander extends StatefulWidget {
   final bool showDate;
   final bool showTime;
+  final ValueChanged<DateTime> onParamChanged;
   const flutter_calander(
-      {super.key, this.showDate = true, this.showTime = true});
+      {super.key,
+      this.showDate = true,
+      this.showTime = true,
+      required this.onParamChanged});
 
   @override
   State<flutter_calander> createState() => _flutter_calander_State();
