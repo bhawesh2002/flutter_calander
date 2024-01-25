@@ -5,7 +5,10 @@ library flutter_calander;
 import 'package:flutter/material.dart';
 
 class flutter_calander extends StatefulWidget {
-  const flutter_calander({super.key});
+  final bool showDate;
+  final bool showTime;
+  const flutter_calander(
+      {super.key, this.showDate = true, this.showTime = true});
 
   @override
   State<flutter_calander> createState() => _flutter_calander_State();
